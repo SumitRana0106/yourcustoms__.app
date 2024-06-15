@@ -1,0 +1,32 @@
+.pageHeader {
+    font-size: 20px;
+    font-weight: 400;
+    color:blueviolet;
+}
+
+.header-sm {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.header-md {
+    font-weight: 500;
+    font-size: 40px;
+}
+
+.header-lg {
+    font-weight: 500;
+    font-size: 50px;
+}
+
+
+.profile-image {
+    border-radius: 10px;
+    margin-bottom: 100px;
+}
+
+.profile-image > img {
+    border-radius: 0px;
+    width: 400px;
+    padding-left: 10%;
+}

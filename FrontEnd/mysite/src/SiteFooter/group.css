@@ -1,0 +1,28 @@
+.siteFooter {
+    font-weight: 500;
+    font-size: 15px;
+    color: black;
+    width: 90%;
+    margin-left: 2.5%;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    padding: 20px 50px 20px 50px;
+    background: rgba(128, 128, 128, 0.692);
+    display: flex;
+    background: white;
+    border-top: 1px solid #00800024;
+    background-image: linear-gradient(180deg, #77fb3408, transparent);
+    z-index: 10000;
+}
+
+.siteFooter > div {
+    width: 33%;
+    text-align: center;
+}
+
+.logo-sm {
+    margin: 0 5px 0 5px;
+    width: 15px;
+    vertical-align: middle;
+}
+

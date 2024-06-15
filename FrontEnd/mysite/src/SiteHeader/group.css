@@ -1,0 +1,73 @@
+.siteHeader {
+    font-weight: 300;
+    color: black;
+    width: 90%;
+    margin-left: 2.5%;
+    margin-bottom: 15px;
+    padding: 20px 50px 20px 50px;
+    background: rgba(128, 128, 128, 0.692);
+    display: flex;
+    position: sticky;
+    top: 0px;
+    background: white;
+    border-bottom: 1px solid #00800024;
+    background-image: linear-gradient(360deg, #77fb3408, transparent);
+    z-index: 10000;
+}
+
+.logo {
+    padding: 10px 30px 10px 0px;
+    border-radius: 7px;
+    font-weight: 930;
+    /* background: #bfbfbf17; */
+    width: 25%;
+    color: black;
+    font-size: 25px;
+}
+
+.logo > img {
+    width: 40px;
+    /* height: 30px; */
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+
+.columns {
+    display: flex;
+    font-size: 100;
+    font-weight: 600;
+    line-height: 3;
+}
+
+
+.button {
+    /* background-color: #b4b8b414; */
+    background-color: white;
+    text-align: center;
+    padding: 10px 15px 10px 15px;
+    margin: 0 10px 0 10px;
+    /* border-radius: 5px; */
+    vertical-align: sub;
+    transition: 1.0s;
+    /* border-left: 2px solid white;
+    border-right: 2px solid white; */
+    border-bottom: 2px solid white;
+
+}
+
+.button:hover {
+    background-color: #b4b8b40f;
+    /* border-left: 2px solid grey;
+    border-right: 2px solid grey; */
+    border-bottom: 1px solid grey;
+    
+}
+
+.center {
+    margin: 0 20px 0 20px;
+}
+
+.CustomLink {
+    text-decoration: none;
+}

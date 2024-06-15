@@ -1,0 +1,22 @@
+.grid {
+    display: flex;
+    width: 84%;
+    margin-left: 8.0%;
+}
+
+.row {
+    width: 100%;
+
+}
+
+
+.home {
+    width:100%;
+    background-color: white;
+}
+
+#bufferblock {
+    height: 250px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.337);
+}
