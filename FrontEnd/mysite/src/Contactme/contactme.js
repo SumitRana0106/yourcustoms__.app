@@ -9,7 +9,11 @@ class Contactme extends React.Component {
             <div className="wrapper">
                 <SiteHeader />
                 <br />
-                Contact me at : rana.sumit93@gmail.com
+                <strong>Drop me a mail at</strong>: rana.sumit93@gmail.com
+                <br></br>
+                <br></br>
+                <br></br>
+                <strong>Linkedin</strong> : https://linkedin.com/SumitRana
 
                 <br />
                 <SiteFooter />

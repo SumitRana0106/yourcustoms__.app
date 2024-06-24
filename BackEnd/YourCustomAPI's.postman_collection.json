@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "3170eaa8-e1bd-4d84-bb39-3f330956d191",
+		"name": "YourCustomAPI's",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get Content",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8002/content/v1/?id=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"content",
+						"v1",
+						""
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "post content",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 2,\n    \"homepage_grid_column\": 2,\n    \"thumbnail_title\": \"Popular tourist destination in himachal pradesh\",\n    \"thumbnail_block_height\": 380,\n    \"thumbnail_image_url\": \"https://sc0.blr1.cdn.digitaloceanspaces.com/article/157373-zcpsrpnnec-1617976605.jpg\",\n    \"tags\": [\"tourism\",\"himachalpradesh\",\"himachal\",\"mountain\",\"india\",\"snow\",\"beautiful\"],\n    \"page_title\": \"Andamans: Popular tourist spots to visit\",\n    \"html_content\": '<div> <h2>Top 10 Tourist Places to Visit in Himachal Pradesh with Family</h2> <h3>1. Shimla</h3> <p> <strong>Details:</strong> Shimla, the capital city of Himachal Pradesh, is known for its colonial architecture, pleasant climate, and beautiful landscapes. It was the summer capital of British India and retains a charming blend of old-world charm and modern facilities. </p> <p> <strong>Attractions:</strong> <ul> <li><strong>The Ridge:</strong> An open space in the heart of Shimla offering panoramic views of the surrounding mountains and connecting major landmarks like the Mall, Lakkar Bazaar, and Scandal Point.</li> <li><strong>Mall Road:</strong> A bustling street lined with shops, cafes, and restaurants. Perfect for shopping and leisure walks.</li> <li><strong>Jakhoo Temple:</strong> Dedicated to Lord Hanuman, it is situated on Jakhoo Hill, the highest peak in Shimla, offering breathtaking views.</li> <li><strong>Christ Church:</strong> An iconic structure with stunning stained glass windows, dating back to 1857.</li> <li><strong>Kufri:</strong> A small hill station near Shimla, known for its scenic beauty and adventure activities like skiing in winter.</li> </ul> </p> <h3>2. Manali</h3> <p> <strong>Details:</strong> Manali is a picturesque town nestled in the Kullu Valley, renowned for its stunning landscapes, adventure sports, and cultural experiences. It is a popular destination for honeymooners and adventure enthusiasts. </p> <p> <strong>Attractions:</strong> <ul> <li><strong>Solang Valley:</strong> Famous for adventure sports like paragliding, zorbing, and skiing. It offers beautiful views of glaciers and snow-capped peaks.</li> <li><strong>Rohtang Pass:</strong> A high mountain pass on the Pir Panjal Range offering stunning views and snow activities. Accessible during summer.</li> <li><strong>Hadimba Temple:</strong> An ancient cave temple surrounded by cedar forests, dedicated to Hadimba Devi, wife of Bhima from the Mahabharata.</li> <li><strong>Manu Temple:</strong> Dedicated to sage Manu, believed to be the creator of the human race.</li> <li><strong>Vashisht Hot Springs:</strong> Known for its natural hot water springs, with separate bathing areas for men and women.</li> </ul> </p> <h3>3. Dharamshala</h3> <p> <strong>Details:</strong> Dharamshala, situated in the Kangra Valley, is known for its serene environment and as the residence of the Dalai Lama. It offers a blend of Indian and Tibetan cultures. </p> <p> <strong>Attractions:</strong> <ul> <li><strong>McLeod Ganj:</strong> Also known as \"Little Lhasa,\" it is home to the Tibetan community and the residence of the Dalai Lama. It has monasteries, Tibetan shops, and cafes.</li> <li><strong>Tsuglagkhang Complex:</strong> The official residence of the Dalai Lama, it includes the Namgyal Monastery, a museum, and a bookstore.</li> <li><strong>Bhagsu Waterfall:</strong> A beautiful waterfall near Bhagsunath Temple, popular for picnics and short treks.</li> <li><strong>Namgyal Monastery:</strong> The largest Tibetan temple outside Tibet, it is an important center of learning and meditation.</li> <li><strong>Kangra Fort:</strong> An ancient fort offering panoramic views of the surrounding valley and the Banganga River.</li> </ul> </p> <h3>4. Dalhousie</h3> <p> <strong>Details:</strong> Dalhousie is a charming hill station spread across five hills, known for its colonial architecture, lush green valleys, and tranquil atmosphere. </p> <p> <strong>Attractions:</strong> <ul> <li><strong>Khajjiar:</strong> Often called \"Mini Switzerland of India,\" it is a beautiful meadow surrounded by dense forests and a small lake in the middle.</li> <li><strong>Dainkund Peak:</strong> The highest peak in Dalhousie offering panoramic views of the surrounding valleys and mountains.</li> <li><strong>Kalatop Wildlife Sanctuary:</strong> A dense forest area rich in flora and fauna, ideal for nature walks and birdwatching.</li> <li><strong>St. John’s Church:</strong> The oldest church in Dalhousie, known for its stunning architecture and serene surroundings.</li> </ul> </p> <h3>5. Kullu</h3> <p> <strong>Details:</strong> Kullu, known as the \"Valley of Gods,\" is famous for its scenic beauty, temples, and vibrant festivals. It is also a gateway to the Great Himalayan National Park. </p> <p> <strong>Attractions:</strong> <ul> <li><strong>Great Himalayan National Park:</strong> A UNESCO World Heritage Site, it offers diverse flora and fauna, trekking trails, and stunning landscapes.</li> <li><strong>Raghunath Temple:</strong> A historic temple dedicated to Lord Rama, built in the 17th century.</li> <li><strong>Bijli Mahadev Temple:</strong> Known for its 60-foot high staff that attracts divine blessings in the form of lightning.</li> <li><strong>Kullu Dussehra:</strong> A famous festival celebrated with great fervor, attracting tourists from all over the world.</li> </ul> </p> <h3>6. Kasauli</h3> <p> <strong>Details:</strong> Kasauli is a small, quiet hill station perfect for a peaceful retreat. It is known for its colonial-era buildings, pleasant weather, and scenic beauty. </p> <p> <strong>Attractions:</strong> <ul> <li><strong>Monkey Point:</strong> The highest point in Kasauli offering panoramic views of the surrounding valley and the Sutlej River.</li> <li><strong>Christ Church:</strong> A beautiful church built in Gothic style, dating back to the British era.</li> <li><strong>Sunset Point:</strong> Offers a stunning view of the sunset and is a perfect spot for evening walks.</li> <li><strong>Gilbert Trail:</strong> A serene nature trail ideal for birdwatching and enjoying the natural beauty.</li> </ul> </p> <h3>7. Chail</h3> <p> <strong>Details:</strong> Chail, known for its natural beauty and the highest cricket ground in the world, is an ideal destination for families seeking tranquility and adventure. </p> <p> <strong>Attractions:</strong> <ul> <li><strong>Chail Palace:</strong> A majestic palace built by the Maharaja of Patiala, now converted into a heritage hotel.</li> <li><strong>Chail Wildlife Sanctuary:</strong> Home to various species of wildlife including deer, wild boar, and birds.</li> <li><strong>Sadhupul Lake:</strong> A small lake offering picturesque views and opportunities for picnics and relaxation.</li> <li><strong>Cricket Ground:</strong> The highest cricket ground in the world, surrounded by scenic landscapes.</li> </ul> </p> <h3>8. Solan</h3> <p> <strong>Details:</strong> Solan, known as the “Mushroom City of India” and “City of Red Gold” due to its tomato production, offers a mix of natural beauty and cultural heritage. </p> <p> <strong>Attractions:</strong> <ul> <li><strong>Mohan Shakti National Heritage Park:</strong> A sprawling park with beautiful sculptures, temples, and gardens.</li> <li><strong>Jatoli Temple:</strong> One of the oldest temples in Solan, known for its stunning architecture and spiritual significance.</li> <li><strong>Shoolini Mata Temple:</strong> Dedicated to Shoolini Mata, the presiding deity of Solan, and the site of an annual fair.</li> <li><strong>Solan Brewery:</strong> One of the oldest breweries in India, offering tours and tastings.</li> </ul> </p> <h3>9. Palampur</h3> <p> <strong>Details:</strong> Palampur is known for its tea gardens and scenic landscapes. It offers a peaceful environment and a variety of outdoor activities. </p> <p> <strong>Attractions:</strong> <ul> <li'\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8002/content/v1/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"content",
+						"v1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update content",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 3,\n    \"homepage_grid_column\": 3,\n    \"thumbnail_title\": \"Top 5 Best beaches in india\",\n    \"thumbnail_block_height\": 410,\n    \"thumbnail_image_url\": \"https://lp-cms-production.imgix.net/2022-03/India%20Varkala%20andrijosef%20shutterstock_1902816124%20RFC.jpg?w=1440&h=810&fit=crop&auto=format&q=75\",\n    \"tags\": [\"tourism\",\"beache\",\"india\",\"beautiful\"],\n    \"page_title\": \"Beautiful beaches in India\",\n    \"html_content\": \"<div style='font-family: Arial, sans-serif; line-height: 1.6; color: #333;'> <h2 style='text-align: center; color: #0066cc;'>Top 5 Best Beaches in India</h2> <h3 style='color: #0066cc;'>1. Radhanagar Beach, Andaman and Nicobar Islands</h3> <p> <strong>Details:</strong> Radhanagar Beach, located on Havelock Island, is often considered one of the best beaches in Asia. It is famous for its pristine white sand, crystal-clear turquoise waters, and lush green surroundings. </p> <p> <strong>Attractions:</strong> <ul style='list-style-type: disc; margin-left: 20px;'> <li><strong>Sunset Views:</strong> Radhanagar Beach is renowned for its stunning sunset views, creating a magical atmosphere as the sun dips into the horizon.</li> <li><strong>Swimming and Snorkeling:</strong> The calm and clear waters make it ideal for swimming and snorkeling. You can explore the vibrant marine life and coral reefs.</li> <li><strong>Peaceful Ambiance:</strong> The beach is relatively less crowded, offering a tranquil and serene environment perfect for relaxation.</li> <li><strong>Forest Walks:</strong> The surrounding forests provide a scenic backdrop and are great for short nature walks.</li> </ul> </p> <h3 style='color: #0066cc;'>2. Baga Beach, Goa</h3> <p> <strong>Details:</strong> Baga Beach is one of the most popular beaches in North Goa, known for its vibrant nightlife, water sports, and bustling shacks. </p> <p> <strong>Attractions:</strong> <ul style='list-style-type: disc; margin-left: 20px;'> <li><strong>Nightlife:</strong> Baga Beach is famous for its nightlife, with numerous beach shacks, bars, and nightclubs like Tito's and Mambo's offering live music and entertainment.</li> <li><strong>Water Sports:</strong> The beach offers a variety of water sports activities, including parasailing, jet-skiing, windsurfing, and banana boat rides.</li> <li><strong>Beach Shacks:</strong> There are many shacks like Britto's and St. Anthony's that serve delicious Goan cuisine and seafood, making it a foodie’s paradise.</li> <li><strong>Shopping:</strong> The nearby markets and stalls sell a variety of souvenirs, clothing, and accessories.</li> </ul> </p> <h3 style='color: #0066cc;'>3. Varkala Beach, Kerala</h3> <p> <strong>Details:</strong> Varkala Beach, also known as Papanasam Beach, is located in Kerala and is famous for its natural springs, cliffs, and serene atmosphere. </p> <p> <strong>Attractions:</strong> <ul style='list-style-type: disc; margin-left: 20px;'> <li><strong>Cliff Views:</strong> The beach is unique due to the high cliffs that run parallel to the sea. These cliffs provide stunning views and are dotted with small cafes and shops.</li> <li><strong>Papanasam Springs:</strong> The beach is believed to have holy waters that wash away sins, attracting many pilgrims. The springs here are known for their medicinal properties.</li> <li><strong>Ayurvedic Treatments:</strong> Varkala is a hub for Ayurvedic treatments and wellness centers, offering rejuvenating massages and therapies.</li> <li><strong>Surfing and Paragliding:</strong> The beach is also a great spot for surfing and paragliding, adding a bit of adventure to your visit.</li> </ul> </p> <h3 style='color: #0066cc;'>4. Palolem Beach, Goa</h3> <p> <strong>Details:</strong> Palolem Beach, located in South Goa, is known for its crescent shape, golden sand, and calm waters, making it a perfect family destination. </p> <p> <strong>Attractions:</strong> <ul style='list-style-type: disc; margin-left: 20px;'> <li><strong>Dolphin Spotting:</strong> One of the highlights is the dolphin-spotting trips where you can see dolphins frolicking in the Arabian Sea.</li> <li><strong>Silent Noise Parties:</strong> Unique to Palolem, these headphone parties allow you to enjoy music without disturbing the serene surroundings.</li> <li><strong>Yoga Retreats:</strong> The beach is home to numerous yoga retreats and wellness centers, offering classes and workshops.</li> <li><strong>Canoe Rides:</strong> You can take a canoe ride to explore the nearby Butterfly Island and the beautiful backwaters.</li> </ul> </p> <h3 style='color: #0066cc;'>5. Marina Beach, Tamil Nadu</h3> <p> <strong>Details:</strong> Marina Beach in Chennai is the longest urban beach in India and one of the longest in the world, stretching over 13 kilometers. </p> <p> <strong>Attractions:</strong> <ul style='list-style-type: disc; margin-left: 20px;'> <li><strong>Promenade:</strong> The wide promenade along the beach is perfect for morning and evening walks, jogging, and enjoying the sea breeze.</li> <li><strong>Monuments and Statues:</strong> The beach is home to several statues and monuments, including the memorials of M.G. Ramachandran and C.N. Annadurai.</li> <li><strong>Aquarium:</strong> The Chennai Aquarium located near the beach is a popular attraction, especially for families with children.</li> <li><strong>Food Stalls:</strong> The beach is lined with numerous food stalls and vendors selling local snacks like sundal (a type of chickpea salad) and murukku (a crunchy snack).</li> </ul> </p> </div>\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8002/content/v1/3/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"content",
+						"v1",
+						"3",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all content list",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Fetch unique tags",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8002/content/v1/tags/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8002",
+					"path": [
+						"content",
+						"v1",
+						"tags",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

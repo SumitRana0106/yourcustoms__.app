@@ -37,8 +37,12 @@ def get_content_list(response: Response):
         print("in T1 >>>>")
         res = db.all()
         print("in T3 >>>")
-        for doc in res:
-            doc.pop('html_content')
+        temp = []
+        # for doc in list(res):
+        #     temp.append({
+        #         "id": 
+        #     })
+            
         
         result['data'] = res        
     except Exception as e:
@@ -49,6 +53,27 @@ def get_content_list(response: Response):
     response.status_code = status_code
     return result
 
+@content.get("/tags/",status_code=201)
+def get_unique_tags(response: Response):
+    result = dict()
+    result['result'] = "SUCCESS"
+    status_code = 200
+
+    try:
+        res = db.all()
+        temp = []
+        for post in res:
+            temp = temp+post["tags"]
+        
+        temp = list(set(temp))
+        result['data'] = temp      
+    except Exception as e:
+        status_code = 500
+        result['result'] = "FAILURE"
+        result['error_reason'] = str(e)
+
+    response.status_code = status_code
+    return result
 
 
 
@@ -59,8 +84,15 @@ def post(Doc: Document, request: Request, response: Response):
     status_code = 200
 
     try:
-        print(" t1 >>>")
-        res = db.save(Doc.id,Doc.model_dump())
+        try:
+            temp = db.get(Doc.id)
+        except:
+            temp = None
+        
+        if temp == None:
+            res = db.save(Doc.id,Doc.model_dump())
+        else:
+            raise Exception("Id already exists !!")
         print("t2 >>>>")
     except Exception as e:
         status_code = 500
@@ -80,6 +112,7 @@ def delete(response: Response,id: int = None):
         if id == None:
             raise KeyError("Invalid 'id' value in path parameters.. !!!")
         else:
+
             result['id'] = id
     except Exception as e:
         status_code = 500
@@ -90,7 +123,7 @@ def delete(response: Response,id: int = None):
     return result
 
 @content.put("/{id}/")
-def put(response: Response,id:int=None):
+def put(Doc: Document, response: Response,id:int=None):
     result = dict()
     result['result'] = "SUCCESS"
     status_code = 200
@@ -99,6 +132,7 @@ def put(response: Response,id:int=None):
         if id == None:
             raise KeyError("Invalid 'id' value in path parameters.. !!!")
         else:
+            res = db.save(Doc.id,Doc.model_dump())
             result['id'] = id
     except Exception as e:
         status_code = 500

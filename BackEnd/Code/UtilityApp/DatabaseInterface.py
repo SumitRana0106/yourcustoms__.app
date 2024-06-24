@@ -32,7 +32,9 @@ class FileDbInterface:
     
     def all(self):
         print("in T2 >>>")
-        return list(self.db_data.values())
+        temp = self.db_data.copy()
+        return list(temp.values())
+        
     
     def save(self,id,document):
         self.db_data[id] = document

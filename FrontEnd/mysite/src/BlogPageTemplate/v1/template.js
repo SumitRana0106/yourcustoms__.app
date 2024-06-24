@@ -36,7 +36,8 @@ class PageTemplate extends React.Component{
             console.log(data);
             
             this.setState({
-                "content": data.data.html_content
+                "content": data.data.html_content,
+                "title": data.data.page_title
             });
         })
         .catch((err)=>{

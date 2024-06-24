@@ -20,3 +20,11 @@
     text-align: center;
     color: rgba(0, 0, 0, 0.337);
 }
+
+.tag{
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 5px 5px;
+    background-color: #02f1204d;
+    font-weight: bold;
+}
