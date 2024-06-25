@@ -5,21 +5,23 @@
     background-color: white;
     margin: 20px 10px;
     border-radius: 10px;
-    /* border: 1px solid rgba(128, 128, 128, 0.288); */
+    border: 5px solid white;
     position: relative;
 }
 
 .component:hover {
     cursor: pointer;
-    border: 1px solid rgba(128, 128, 128, 0.288);
+    border: 5px solid #F6F2F1 ;
+    background-color: #F6F2F1 ;
+    transition: ease-in;
 }
 
 .thumbnail-image {
-    width: 100%;    
+    width: 100%;
     overflow: hidden;
     /* position: absolute; */
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 .thumbnail-image > img {
@@ -38,15 +40,16 @@
  }
 
 .thumbnail-title {
-    padding: 20px 10px 20px 10px;
+    padding: 5px 10px 20px 10px;
     /* position: absolute; */
     bottom: 10%;
-    color: black;
-    font-weight: 700;
+    color: gray;
+    font-weight: 900;
     transition: 2.5;
     text-align: left;
     border-top: 1px solid white;
     margin: 10px;
+    
 }
 .thumbnail-title:hover {
     color: rgb(113, 177, 233);
